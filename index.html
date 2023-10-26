@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Peak Sun Hours Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/suncalc/1.8.0/suncalc.min.js"></script> -->
+  </head>
+  <body>
+    <h1>Peak Sun Hours Calculator</h1>
+    <div class="app-container">
+      <div class="form-container">
+        <!-- <div class="input">
+          <h2>Address, City, or Zip Code</h2>
+
+          <input
+            type="text"
+            id="address"
+            placeholder="Enter a Location"
+            required
+          /> -->
+        <!-- Warning message container -->
+        <!--<div class="warning-message"></div>
+        </div>-->
+
+        <div class="input">
+          <h2>Solar Panel Tilt Angle (degrees from horizontal)</h2>
+          <input type="number" id="tilt" placeholder=" " required />
+          <!-- Warning message container -->
+          <div class="warning-message"></div>
+        </div>
+        <div class="input">
+          <h2>Solar Panel Azimuth Angle (degrees clockwise from north)</h2>
+          <input type="number" id="azimuth" placeholder="" required />
+          <!-- Warning message container -->
+          <div class="warning-message"></div>
+        </div>
+        <div class="input">
+          <h2>Sunrise Time</h2>
+          <input type="time" id="sunrise" placeholder="HH:MM" required />
+          <!-- Warning message container -->
+          <div class="warning-message"></div>
+        </div>
+        <div class="input">
+          <h2>Sunset Time</h2>
+          <input type="time" id="sunset" placeholder="HH:MM" required />
+          <!-- Warning message container -->
+          <div class="warning-message"></div>
+        </div>
+        <div class="error-message"></div>
+        <div class="button-container">
+          <button type="button" id="calculate">Calculate Peak Sun Hours</button>
+          <button type="button" id="reset">Reset</button>
+        </div>
+      </div>
+
+      <div id="results"></div>
+      <div class="calc-notes">
+        <h2>Calculator Notes:</h2>
+        <p>
+          This Peak Sun Hours Calculator is designed to estimate the peak sun hours for a specific location and solar panel setup. <strong>Here's what the calculator takes into account:</strong>
+        </p>
+        <ul>
+          <li>The Solar Panel Tilt Angle (degrees from horizontal): This angle determines how tilted the solar panel is relative to the ground. It affects the amount of sunlight the panel can capture.</li>
+          <li>The Solar Panel Azimuth Angle (degrees clockwise from north): This angle specifies the direction the solar panel faces. It influences how the panel aligns with the sun's path during the day.</li>
+          <li>Sunrise Time and Sunset Time: These times indicate the local sunrise and sunset for your location.</li>
+        </ul>
+        <p>
+          <strong>Please note that this calculator does not take the following factors into account:</strong>
+        </p>
+        <ul>
+          <li>Seasonal Variations: The calculator assumes a fixed tilt and azimuth angle and does not consider seasonal changes in the sun's position.</li>
+          <li>Shading and Obstructions: It does not consider shading from nearby objects, buildings, or trees that might affect solar panel efficiency.</li>
+        </ul>
+        <h3>
+          Data Source:
+        </h3>
+        <p>
+          This calculator utilizes solar position calculations from the suncalc library (v1.8.0).
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.tutorialjinni.com/suncalc/1.8.0/suncalc.min.js"></script>
+  </body>
+</html>

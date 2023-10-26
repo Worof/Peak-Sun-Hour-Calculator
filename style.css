@@ -1,0 +1,154 @@
+* {
+  font-family: "Roboto", sans-serif;
+  font-family: "Shadows Into Light", cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 5rem;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #ffffff;
+  color: #ffffff;
+}
+
+h1 {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 3rem;
+  color: #000;
+  padding: 16px 45px;
+  background-color: #ffc108;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+.app-container {
+  height: 100vh;
+}
+.app-container .form-container {
+  margin-top: 20px;
+  background-color: #1daccf;
+  border: 2px solid #b1c8e4;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  width: 615px;
+}
+
+.app-container .form-container input {
+  width: 70%;
+  padding: 10px;
+  border-style: none;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.app-container .form-container input:focus {
+  border: solid 1px;
+  border-color: #000;
+}
+.app-container .form-container .input .warning-message {
+  color: red; /* Set the text color for the warning message */
+  font-size: 14px; /* Set the font size */
+  margin-top: 5px; /* Add some spacing above the warning message */
+  margin-left: 10px;
+}
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.app-container .form-container h2 {
+  padding: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.app-container .form-container .button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.app-container .form-container .button-container button {
+  width: 30%;
+  margin-top: 5px;
+  margin-left: 10px;
+  border-radius: 3px;
+  border-style: none;
+  background-color: #ffc108;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.app-container .form-container .button-container #reset {
+  background-color: #6c757d;
+}
+.app-container .form-container .button-container button:hover {
+  border: solid 1px;
+}
+.app-container .form-container .button-container #calculate:hover {
+  background-color: #f3c745;
+}
+.app-container .form-container .button-container #reset:hover {
+  background-color: #79848d;
+}
+
+.app-container #results {
+  width: 615px;
+  background-color: #ffc108;
+  padding: 30px 20px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  color: #000;
+  font-size: 2rem;
+}
+.app-container .calc-notes{
+  width: 615px;
+  background-color: #ffc108;
+  padding: 30px 20px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  color: #000;
+  font-size: 20px;
+}
+.app-container .calc-notes ul{
+  margin-left: 10px;
+}
+.app-container .calc-notes ul li{
+  line-height: 3rem;
+  margin-bottom: 10px;
+}
+.app-container .calc-notes p{
+  margin-bottom: 15px;
+}
